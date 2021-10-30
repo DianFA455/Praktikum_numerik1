@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from math import e #untuk memanggul bilangan eksponen natural (e)
 
 def f(x):
-    return e**2**x-8*x**2
+    return e**2*x-8*x**2
 
 def Df(x):
     return e**x-10*x
