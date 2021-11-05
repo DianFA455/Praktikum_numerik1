@@ -1,0 +1,18 @@
+#NAMA   : Dian Firstian Alfarabi
+#NPM    : 202010225027
+#Kelas  : TF3A1
+import scipy
+from scipy.linalg import lu, lu_factor, lu_solve
+import numpy as np 
+
+A = np.array([[3.,-0.1,-0.2],[0.1,7.,-0.3],[0.3,-0.2,10]])
+
+b = np.array([7.85,-19.3,4])
+
+P, L, U = lu(A)
+lu, piv = lu_factor(A)
+x = lu_solve((lu,piv),b)
+print ('Matriks P :\n ',P)
+print ('Matriks L :\n ',L)
+print ('Matriks U :\n ',U)
+print ('Solutions :\n ',x)
